@@ -67,7 +67,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className='resume'>
-                    <span className='title'>My Resume</span>
+                    <span className='title'>Work Experience</span>
                     <div className='row w-100'>
                         <div className='col-12 col-md-4'>
                             <div className='w-96 resume-item'>
