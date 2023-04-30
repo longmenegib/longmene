@@ -9,7 +9,7 @@ export default function Contact() {
     <div className='base'>
         <span className='title'>Get <span className='name'>In Touch</span></span>
         <div className='container w-100'>
-            <div className='row w-100'>
+            <div className='row w-100 justify-content-center'>
                 <div className='col-12 col-md-4'>
                     <div className='w-96 contact-item'>
                         <div className='icon'><Email sx={{color: '#fff'}}/></div>
@@ -49,8 +49,8 @@ export default function Contact() {
                 <div className='col-12 col-md-7'>
                     <div className='w-95'>
                         <div className='row'>
-                            <div className='col-4 col-md-4'><input type="text" placeholder='YOUR NAME'/></div>
-                            <div className='col-4 col-md-4'><input type="text" placeholder='YOUR EMAIL'/></div>
+                            <div className='col-4 col-md-4'><input type="text" placeholder='NAME'/></div>
+                            <div className='col-4 col-md-4'><input type="text" placeholder='EMAIL'/></div>
                             <div className='col-4 col-md-4'><input type="text" placeholder='SUBJECT'/></div>
                         </div>
                         <div className='row textarea'>

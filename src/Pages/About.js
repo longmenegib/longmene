@@ -10,10 +10,10 @@ export default function About() {
     return (
         <div className='base'>
             <span className='title'>About <span className='name'>Me</span></span>
-            <div className='container w-100'>
-                <div className='row w-100 align-items-center' style={{ marginTop: 40 }}>
+            <div className='container'>
+                <div className='row w-100 align-items-center justify-content-center' style={{ marginTop: 40 }}>
                     <div className='col-12 col-md-4'>
-                        <div className='w-95 profile-img'>
+                        <div className='profile-img w-100'>
                             <img src={profile} width="100%" height={'450px'} />
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function About() {
                                         <div className='item-item bold'>gibrillongmene@gmail.com</div>
                                     </div>
                                 </div>
-                                <Button style={{marginTop: 10}} className='w-50 button'>Download MY CV</Button>
+                                <Button style={{marginTop: 10, marginLeft: 10}} className='w-75 button'>Download MY CV</Button>
                             </div>
                         </div>
                     </div>

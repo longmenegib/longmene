@@ -20,7 +20,7 @@ export default function Dial() {
     // <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: 'absolute', bottom: 10, right: 16, zIndex: 100 }}
+        sx={{ position: 'absolute', bottom: 10, right: 16, zIndex: 1000 }}
         icon={<Person />}
         FabProps={{
             sx: {

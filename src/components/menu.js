@@ -8,7 +8,6 @@ export default function MenuCustom() {
     const [isOpen, setOpen] = useState(false);
 
     const location = useLocation();
-    console.log(location)
 
     return (
         <div style={{ position: 'absolute', top: 40, right: 40, zIndex: 100 }}>
