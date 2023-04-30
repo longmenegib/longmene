@@ -373,6 +373,7 @@ input:focus, textarea:focus{
 }
 .profile-img{
     border: 5px #383838 solid;
+    margin-left: 15px;
 }
 
 .resume{

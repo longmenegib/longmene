@@ -11,7 +11,7 @@ export default function About() {
         <div className='base'>
             <span className='title'>About <span className='name'>Me</span></span>
             <div className='container'>
-                <div className='row w-100 align-items-center justify-content-center' style={{ marginTop: 40 }}>
+                <div className='row w-100 align-items-center justify-content-center' style={{ marginTop: 20 }}>
                     <div className='col-12 col-md-4'>
                         <div className='profile-img w-100'>
                             <img src={profile} width="100%" height={'450px'} />
