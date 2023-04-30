@@ -1,6 +1,7 @@
 import { Email, Facebook, LinkedIn, LocationCity, Phone, Twitter, WhatsApp } from '@mui/icons-material'
 import { Divider } from '@mui/material'
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import MenuCustom from '../components/menu'
 
 export default function Contact() {
@@ -30,7 +31,7 @@ export default function Contact() {
             </div>
             <Divider sx={{ width: 200, height: 2, backgroundColor: '#ffc107', margin: 'auto'}}/>
             <div className='row w-100' style={{marginTop: 40}}>
-                <div className='col-5'>
+                <div className='col-12 col-md-5'>
                     <div className='w-95 contact-infos'>
                         <span className='head'>Send Me An Email</span>
                         <span className='body'>Feel free to get in touch with me. I am always open to discussing new projects or creative ideas.</span>
@@ -45,18 +46,19 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className='col-7'>
+                <div className='col-12 col-md-7'>
                     <div className='w-95'>
                         <div className='row'>
-                            <div className='col-4'><input type="text" placeholder='YOUR NAME'/></div>
-                            <div className='col-4'><input type="text" placeholder='YOUR EMAIL'/></div>
-                            <div className='col-4'><input type="text" placeholder='SUBJECT'/></div>
+                            <div className='col-4 col-md-4'><input type="text" placeholder='YOUR NAME'/></div>
+                            <div className='col-4 col-md-4'><input type="text" placeholder='YOUR EMAIL'/></div>
+                            <div className='col-4 col-md-4'><input type="text" placeholder='SUBJECT'/></div>
                         </div>
                         <div className='row textarea'>
                             <div className='col-12'>
                                 <textarea rows={6} className='w-100' placeholder='YOUR MESSAGE'></textarea>
                             </div>
                         </div>
+                        <Button style={{marginTop: 10}} className='w-50 button'>Send</Button>
                     </div>
                 </div>
             </div>

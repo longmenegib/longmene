@@ -1,4 +1,4 @@
-import { Facebook } from '@mui/icons-material'
+import { Assignment, Badge, BusinessCenter, CalendarMonth, Email, Facebook, Home, LocationCity, Phone, Place, ViewDay } from '@mui/icons-material'
 import { Divider } from '@mui/material'
 import React from 'react'
 import MenuCustom from '../components/menu'
@@ -21,24 +21,24 @@ export default function About() {
                         <div className='w-100 about-infos'>
                             <span className='body'>
                                 I'm Longmene Gibril, 22 years old Cameroonian based
-                                front‑end developer living in Yaounde, focused on crafting clean,
+                                front‑end developer, who focus on crafting clean,
                                 creative and user‑friendly experiences,
                                 I build beautiful and powerful websites and android applications.
                             </span>
                             <div className='footer row w-100'>
                                 <div className='col-12 col-sm-6'>
                                     <div className='footer-item'>
-                                        <div className='item-item'><Facebook color="red" /></div>
+                                        <div className='item-item'><CalendarMonth color="red" /></div>
                                         <div className='item-item'>Birthday: </div>
                                         <div className='item-item bold'>January 2001</div>
                                     </div>
                                     <div className='footer-item'>
-                                        <div className='item-item'><Facebook color="red" /></div>
+                                        <div className='item-item'><Home color="red" /></div>
                                         <div className='item-item'>Nationality: </div>
                                         <div className='item-item bold'>Cameroonian</div>
                                     </div>
                                     <div className='footer-item'>
-                                        <div className='item-item'><Facebook color="red" /></div>
+                                        <div className='item-item'><BusinessCenter color="red" /></div>
                                         <div className='item-item'>Experience: </div>
                                         <div className='item-item bold'>2 years</div>
                                     </div>
@@ -46,17 +46,17 @@ export default function About() {
                                 </div>
                                 <div className='col-12 col-sm-6'>
                                     <div className='footer-item'>
-                                        <div className='item-item'><Facebook color="red" /></div>
+                                        <div className='item-item'><Phone color="red" /></div>
                                         <div className='item-item'>Phone: </div>
                                         <div className='item-item bold'>+237 652 256 452</div>
                                     </div>
                                     <div className='footer-item'>
-                                        <div className='item-item'><Facebook color="red" /></div>
+                                        <div className='item-item'><Place color="red" /></div>
                                         <div className='item-item'>Address: </div>
                                         <div className='item-item bold'>Yaounde, CMR</div>
                                     </div>
                                     <div className='footer-item'>
-                                        <div className='item-item'><Facebook color="red" /></div>
+                                        <div className='item-item'><Email color="red" /></div>
                                         <div className='item-item'>Email: </div>
                                         <div className='item-item bold'>gibrillongmene@gmail.com</div>
                                     </div>
@@ -115,17 +115,17 @@ export default function About() {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12 col-sm-4 stats-item'>
-                            <div className='icon'><Facebook sx={{color: '#fff'}} fontSize="large"/></div>
+                            <div className='icon'><BusinessCenter sx={{color: '#fff'}} fontSize="large"/></div>
                             <div className='number'>02</div>
                             <div className='titre'>Years experience</div>
                         </div>
                         <div className='col-12 col-sm-4 stats-item'>
-                            <div className='icon'><Facebook sx={{color: '#fff'}} fontSize="large"/></div>
+                            <div className='icon'><Assignment sx={{color: '#fff'}} fontSize="large"/></div>
                             <div className='number'>08</div>
                             <div className='titre'>Done projects</div>
                         </div>
                         <div className='col-12 col-sm-4 stats-item'>
-                            <div className='icon'><Facebook sx={{color: '#fff'}} fontSize="large"/></div>
+                            <div className='icon'><ViewDay sx={{color: '#fff'}} fontSize="large"/></div>
                             <div className='number'>05</div>
                             <div className='titre'>Side projects</div>
                         </div>

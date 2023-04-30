@@ -17,7 +17,7 @@ body, html {
   
   .bg-image {
     /* The image used */
-    background-image: url("../src/assets/wallpaper-1.jpg");
+    background-image: url("../src/assets/home.jpg");
   
     /* Add the blur effect */
     /* filter: blur(8px);
@@ -60,6 +60,28 @@ body, html {
     line-height: 130px;
     font-family: 'Playfair Display', serif;
   }
+
+  @media (max-width: 1230px) {
+    .bg-title{
+        font-size: 84px;
+        word-spacing: 0px;
+        line-height: 84px;
+        font-family: 'Playfair Display', serif;
+      }
+    .base .title{
+        font-size: 48px !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .bg-title{
+        font-size: 64px;
+        word-spacing: 0px;
+        line-height: 64px;
+        font-family: 'Playfair Display', serif;
+      }
+}
 
 .name{
     color: #ffc107;
@@ -283,6 +305,7 @@ input{
     border: none;
     color: #fff;
     padding-left: 2px;
+    width: 100%;
 }
 
 textarea{
@@ -309,7 +332,12 @@ input:focus, textarea:focus{
     color: #fff;
 }
 
+
 .menuitem:hover{
+    color: #ffc107;
+}
+
+.active{
     color: #ffc107;
 }
 

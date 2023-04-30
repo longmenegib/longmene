@@ -2,10 +2,13 @@ import { Article, AssignmentTurnedIn, ContentCopy, ContentCut, ContentPaste, Ema
 import { ListItemIcon, ListItemText, MenuItem, MenuList } from '@mui/material';
 import { Spin as Hamburger } from 'hamburger-react'
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export default function MenuCustom() {
     const [isOpen, setOpen] = useState(false);
+
+    const location = useLocation();
+    console.log(location)
 
     return (
         <div style={{ position: 'absolute', top: 40, right: 40, zIndex: 100 }}>
@@ -29,44 +32,44 @@ export default function MenuCustom() {
                 >
                     <MenuList sx={{marginTop: 1, color: '#fff'}}>
                         <MenuItem className='menuitem' style={{height: 49}}>
-                            <Link className='menuitem d-flex w-100 h-100 align-items-center justify-content-center' to="/">
+                            <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/">
                                 <ListItemIcon>
-                                    <Home fontSize="medium" sx={{color: '#ffc107'}} />
+                                    <Home fontSize="medium" sx={{color: location.pathname === '/' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
-                                <ListItemText sx={{color: '#ffc107'}}>HOME</ListItemText>
-                            </Link>
+                                <ListItemText>HOME</ListItemText>
+                            </NavLink>
                         </MenuItem>
                         <MenuItem className='menuitem' style={{height: 49}}>
-                            <Link className='menuitem d-flex w-100 h-100 align-items-center justify-content-center' to="/about">
+                            <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/about">
                                 <ListItemIcon>
-                                    <Person fontSize="medium" sx={{color: '#fff'}} />
+                                    <Person fontSize="medium" sx={{color: location.pathname ==='/about' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
                                 <ListItemText>ABOUT</ListItemText>
-                            </Link>
+                            </NavLink>
                         </MenuItem>
                         <MenuItem className='menuitem' style={{height: 49}}>
-                            <Link className='menuitem d-flex w-100 h-100 align-items-center justify-content-center' to="/portfolio">
+                            <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/portfolio">
                                 <ListItemIcon>
-                                    <AssignmentTurnedIn fontSize="medium" sx={{color: '#fff'}} />
+                                    <AssignmentTurnedIn fontSize="medium" sx={{color: location.pathname ==='/portfolio' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
                                 <ListItemText>PORTFOLIO</ListItemText>
-                            </Link>
+                            </NavLink>
                         </MenuItem>
                         <MenuItem className='menuitem' style={{height: 49}}>
-                            <Link className='menuitem d-flex w-100 h-100 align-items-center justify-content-center' to="/contact">
+                            <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/contact">
                                 <ListItemIcon>
-                                    <Email fontSize="medium" sx={{color: '#fff'}} />
+                                    <Email fontSize="medium" sx={{color: location.pathname ==='/contact' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
                                 <ListItemText>CONTACT</ListItemText>
-                            </Link>
+                            </NavLink>
                         </MenuItem>
                         <MenuItem className='menuitem' style={{height: 49}}>
-                            <Link className='menuitem d-flex w-100 h-100 align-items-center justify-content-center' to="/blog">
+                            <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/blog">
                                 <ListItemIcon>
-                                    <Article fontSize="medium" sx={{color: '#fff'}} />
+                                    <Article fontSize="medium" sx={{color: location.pathname ==='/blog' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
                                 <ListItemText>BLOG</ListItemText>
-                            </Link>
+                            </NavLink>
                         </MenuItem>
                     </MenuList>
                 </div>
