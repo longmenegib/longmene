@@ -61,7 +61,7 @@ export default function About() {
                                         <div className='item-item bold'>gibrillongmene@gmail.com</div>
                                     </div>
                                 </div>
-                                <Button style={{marginTop: 10, marginLeft: 10}} className='w-75 button'>Download MY CV</Button>
+                                <Button style={{marginTop: 10, marginLeft: 10}} className='w-50 button'>Download MY CV</Button>
                             </div>
                         </div>
                     </div>
@@ -77,8 +77,8 @@ export default function About() {
                                 </div>
                                 <div>Freelancing</div>
                                 <div className='object'>
-                                    I'm Longmene Gibril, british based web designer and
-                                    front‑end developer living in London focused
+                                    Responsible in builind complex layout for websites applications and 
+                                    deploying them on various hosting platform such Godaddy, hostinger.
                                 </div>
                             </div>
                         </div>
@@ -90,8 +90,8 @@ export default function About() {
                                 </div>
                                 <div>Bivindi Technology</div>
                                 <div className='object'>
-                                    I'm Longmene Gibril, british based web designer and
-                                    front‑end developer living in London focused
+                                    Responsible in building, maintaining web and mobile applications layout. 
+                                    Integrating the frontend application to the services via API.
                                 </div>
                             </div>
                         </div>
@@ -103,8 +103,9 @@ export default function About() {
                                 </div>
                                 <div>BeOne/Gateway</div>
                                 <div className='object'>
-                                    I'm Longmene Gibril, british based web designer and
-                                    front‑end developer living in London focused
+                                    Development, Integration of the frontend application to the services via API. Managing differents version
+                                    of web and mobile application using GIT. Deployment of mobile android application
+                                    on Google android platform.
                                 </div>
                             </div>
                         </div>
