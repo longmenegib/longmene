@@ -22,7 +22,7 @@ export default function MenuCustom() {
                         zIndex: 1,
                         right: 40,
                         top: 40,
-                        height: 237,
+                        height: 207,
                         width: 200,
                         opacity: !isOpen ? "0" : "1",
                         transition: "all .2s ease-in-out",
@@ -46,14 +46,14 @@ export default function MenuCustom() {
                                 <ListItemText>ABOUT</ListItemText>
                             </NavLink>
                         </MenuItem>
-                        {/* <MenuItem className='menuitem' style={{height: 49}}>
+                        <MenuItem className='menuitem' style={{height: 49}}>
                             <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/portfolio">
                                 <ListItemIcon>
                                     <AssignmentTurnedIn fontSize="medium" sx={{color: location.pathname ==='/portfolio' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
                                 <ListItemText>PORTFOLIO</ListItemText>
                             </NavLink>
-                        </MenuItem> */}
+                        </MenuItem>
                         <MenuItem className='menuitem' style={{height: 49}}>
                             <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/contact">
                                 <ListItemIcon>
@@ -62,14 +62,14 @@ export default function MenuCustom() {
                                 <ListItemText>CONTACT</ListItemText>
                             </NavLink>
                         </MenuItem>
-                        <MenuItem className='menuitem' style={{height: 49}}>
+                        {/* <MenuItem className='menuitem' style={{height: 49}}>
                             <NavLink className={(navData) => (navData.isActive ?  'menuitem d-flex w-100 h-100 align-items-center justify-content-center active' : 'menuitem d-flex w-100 h-100 align-items-center justify-content-center')} to="/blog">
                                 <ListItemIcon>
                                     <Article fontSize="medium" sx={{color: location.pathname ==='/blog' ? '#ffc107' : '#fff'}} />
                                 </ListItemIcon>
                                 <ListItemText>BLOG</ListItemText>
                             </NavLink>
-                        </MenuItem>
+                        </MenuItem> */}
                     </MenuList>
                 </div>
             </div>
