@@ -536,6 +536,7 @@ input:focus, textarea:focus{
     min-height: 300px;
     padding-bottom: 20px;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .project-title{

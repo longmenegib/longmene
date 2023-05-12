@@ -19,7 +19,7 @@ export default function Portfolio() {
                   <div><img width={'100%'} src={item.img} /></div>
                   <div>
                     <span className='project-title'>{item.title}</span>
-                    <span className='project-type'>Visit website</span>
+                    <a href={item.url} target="_blank" className='project-type'>Visit website</a>
                     <div className='project-desc'>{item.description}</div>
                     <div className='project-skills'>
                       <div className='d-flex rowws'>
@@ -49,16 +49,24 @@ const itemData = [
     img: aiscripter,
     title: 'AISCPITER',
     description: `AIScripter is an innovative project designed to simplify the process 
-    of generating scripts for short videos. This powerful tool utilizes 
-    cutting-edge AI technology to create scripts that capture the attention 
-    of viewers and leave a lasting impact.`,
-    skills: ['REACT JS', 'NODE JS', 'NEXT JS', 'MATERIAL UI', 'AI', 'OPENAI']
+    of generating scripts for short videos.`,
+    skills: ['REACT JS', 'NODE JS', 'NEXT JS', 'MATERIAL UI', 'AI', 'OPENAI'],
+    url: 'https://aiscripter-ochre.vercel.app/'
   },
   {
     img: songwords,
     title: 'SONG WORDS',
     description: `Web application that allow users to generate 
     automatically quotes from their favorites songs`,
-    skills: ['NEXT JS', 'MATERIAL UI', 'AI', 'OPENAI']
+    skills: ['NEXT JS', 'MATERIAL UI', 'AI', 'OPENAI'],
+    url: 'https://songwords.xyz'
+  },
+  {
+    img: songwords,
+    title: 'INLIVE STREAM',
+    description: `An online streaming platform that connects artist and
+    their fan base. `,
+    skills: ['MATERIAL UI', 'React js', 'Redux', 'Redux-saga'],
+    url: 'https://inlive-stream.com'
   },
 ];

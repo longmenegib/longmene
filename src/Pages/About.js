@@ -40,7 +40,7 @@ export default function About() {
                                     <div className='footer-item'>
                                         <div className='item-item'><BusinessCenter color="red" /></div>
                                         <div className='item-item'>Experience: </div>
-                                        <div className='item-item bold'>2 years</div>
+                                        <div className='item-item bold'>5 years</div>
                                     </div>
                                     
                                 </div>
